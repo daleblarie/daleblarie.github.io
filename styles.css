@@ -1,0 +1,49 @@
+body {
+  background: #151515 0 0;
+  color: #eaeaea;
+  font: 16px;
+  line-height: 1.5;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  height: 300px
+  width: 100%
+}
+/* the style for the actual links */
+a {
+  text-decoration: none;
+  color: #0000ff;
+  font: 20px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.main-header {
+  color: #32CD32;
+  font-size: 3em;
+  font-weight: 2em;
+}
+#intro {
+  background: #d3d3d3;
+  font-family: "Courier New", Courier;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-nav {
+  width: 100%;
+}
+.main-nav a {
+  font-size: 2em;
+  font-weight: 1em;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-around;
+}
