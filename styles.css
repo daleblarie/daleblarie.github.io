@@ -11,7 +11,6 @@ body {
 a {
   text-decoration: none;
   color: #0000ff;
-  font: 20px;
 }
 a:hover {
   text-decoration: underline;
@@ -46,4 +45,33 @@ a:hover {
   padding: 0;
   flex-direction: row;
   justify-content: space-around;
+}
+
+/* mobile responsiveness */
+@media screen and (max-width:550px) {
+  .main-header {
+    font-size: 2em;
+  }
+  body {
+    align-items: stretch;
+  }
+  .main-nav ul {
+  align-items: center;
+  flex-direction: column;
+}
+}
+.about #about {
+  padding-left: 100px;
+  font-size: 2em;
+}
+.about .profile {
+  float: left;
+  padding: 25px;
+}
+.about img {
+  border-radius: 50%;
+  max-width: 100%
+}
+.about p {
+  text-indent: 1em;
 }
