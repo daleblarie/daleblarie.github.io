@@ -36,6 +36,7 @@
 	border:none;
 	outline:1px solid #fff;
 	display:inline-block;
+	cursor: pointer
 }
 
 .gridoff {
