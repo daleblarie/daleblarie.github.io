@@ -15,7 +15,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+.content{
+  width: 900px;
+  margin: 0 auto;
+}
 .main-header {
   color: #32CD32;
   font-size: 3em;
@@ -65,13 +68,23 @@ a:hover {
   font-size: 2em;
 }
 .about .profile {
-  float: left;
-  padding: 25px;
+  width: 250px;
+
 }
 .about img {
+  float: right;
   border-radius: 50%;
   max-width: 100%
 }
 .about p {
   text-indent: 1em;
+}
+
+#canvas1{
+  margin: 0 auto;
+  display: block;
+}
+.sideBySide{
+  display: inline-block;
+  width: 50%
 }

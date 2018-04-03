@@ -1,0 +1,56 @@
+#container {
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin:auto;
+	height:480px;
+	width:480px;
+	padding: 0;
+	border: none;
+}
+
+#header {
+	position: relative;
+	width: 480px;
+	margin: auto;
+	text-align: center;
+}
+
+#myRange {
+	direction: rtl;
+}
+
+.row {
+  .gridoff {
+  	margin:0;
+  	padding:0;
+  	border:none;
+  	outline:1px solid #fff;
+  	display:inline-block;
+  }
+}
+.cell {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #fff;
+	display:inline-block;
+}
+
+.gridoff {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #fff;
+	display:inline-block;
+}
+
+.gridon {
+  margin:0;
+	padding:0;
+	border:none;
+	outline:1px solid #fff;
+	display:inline-block;
+  background-color: white;
+}

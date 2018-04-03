@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <title>Dale Larie</title>
+    <meta charset='utf-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/GameOfLife/styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Dale Larie</title>
   </head>
   <body>
     <div id="intro">
@@ -24,18 +25,47 @@
     <main class="content">
       <section class="about">
         <h2 id="about">About</h2>
-        <div class="profile">
-          <img src="./assets/profile.jpg" width="200" height="286.5">
+        <div>
+          <div class="profile sideBySide">
+            <img src="https://raw.githubusercontent.com/daleblarie/daleblarie.github.io/master/assets/Profile.jpg" width="200" height="286.5"/>
+          </div>
+          <div class="sideBySide">
+            <p> Hey there!</p>
+            <p>My name is Dale, and I am a student at the University of Vermont, expected to graduate in May 2020. I am studying Biomedical Engineering, with a concentration in System and Network Biology. At UVM, this basically means that I will be concentrating in Comupter Science in Biomedical Engineering. I am also planning on earning a minor in computer science.</p>
+            <p> I am from New Hampshire, and spent alot of my youth in the great wilderness of New England with the Boy Scouts, eventually earning the rank of Eagle Scout. However, when my brother moved to San Francisco after college, he introduced me to computer programming and web development, and I have been in love with it since.</p>
+          </div>
         </div>
-        <p> Hey there!</p>
-        <p>My name is Dale, and I am a student at the University of Vermont, expected to graduate in May 2020. I am studying Biomedical Engineering, with a concentration in System and Network Biology. At UVM, this basically means that I will be concentrating in Comupter Science in Biomedical Engineering. I am also planning on earning a minor in computer science.</p>
-
-        <p> I am from New Hampshire, and spent alot of my youth in the great wilderness of New England with the Boy Scouts, eventually earning the rank of Eagle Scout. However, when my brother moved to San Francisco after college, he introduced me to computer programming and web development, and I have been in love with it since.</p>
       </section>
       <section class"projects">
         <h2 id="projects">Projects</h2>
-        <p> This is a planetary movement and gravity simulator I made using javascript. The planets all have their own mass, and their gravity's all interact with eachother. These are the inner planets, and their moons.</p>
-        <canvas id="canvas1" width="800" height="800"></canvas>
+        <div>
+          <p> This is a planetary movement and gravity simulator I made using javascript. The planets all have their own mass, and their gravity's all interact with eachother. These are the inner planets, and their moons.</p>
+          <canvas id="canvas1" width="800" height="800"></canvas>
+        </div>
+        <div>
+          <p> This is a snake game I made. Click the picture to go to it!</p>
+          <a href="https://daleblarie.github.io/Snake-Game/"><img src="./assets/Snake Picture.png" width="200" height="200"/></a>
+        </div>
+        <div>
+          <p> Game of life stuff</p>
+          <div id="header">
+            <button id="newGrid">New Grid</button>
+            <button id="startStopGenerator">Start/Stop Generator</button>
+            <label for="slider">Speed Control:
+              <!-- <span class="min">Slow</span>
+              <span class="max">Fast</span> -->
+            </label>
+            <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+          </div>
+          <div id="container"></div>
+          <script type="text/javascript" src="./assets/GameOfLife/Coord.js"></script>
+          <script type="text/javascript" src="./assets/GameOfLife/Cell.js"></script>
+          <script type="text/javascript" src="./assets/GameOfLife/Grid.js"></script>
+          <script type="text/javascript" src="./assets/GameOfLife/try2.js"></script>
+          <br><br>
+        </div>
+      </section>
+    </main>
   </body>
   <script src="assets/planetaryMovement.js"></script>
 </html>
