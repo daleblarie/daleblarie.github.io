@@ -83,8 +83,19 @@ a:hover {
 #canvas1{
   margin: 0 auto;
   display: block;
+  outline: 1px solid #fff;:
 }
 .sideBySide{
   display: inline-block;
   width: 50%
+}
+.snake{
+  margin: 0 auto;
+}
+p{
+  text-align: center;
+}
+.snake img{
+  display: block;
+  margin: 0 auto;
 }
