@@ -26,15 +26,16 @@
   	margin:0;
   	padding:0;
   	border:none;
-  	outline:1px solid #fff;
+  	outline:1px solid #000;
   	display:inline-block;
   }
 }
 .cell {
 	margin:0;
+	background-color: white;
 	padding:0;
 	border:none;
-	outline:1px solid #fff;
+	outline:1px solid #000;
 	display:inline-block;
 }
 
@@ -52,5 +53,5 @@
 	border:none;
 	outline:1px solid #fff;
 	display:inline-block;
-  background-color: white;
+  background-color: black;
 }
