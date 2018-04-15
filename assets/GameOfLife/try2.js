@@ -1,5 +1,5 @@
 /* global document Grid Coord Cell */
-const GRID_SIZE = 15;
+const GRID_SIZE = 40;
 const GRID_WIDTH = 480;
 
 const newGridButton = document.getElementById('newGrid');
@@ -42,9 +42,46 @@ for (let i = 0; i < GRID_SIZE; i += 1) {
   }
 }
 
-grid.cells['0, 0'].isAlive = true;
-grid.cells['1, 0'].isAlive = true;
-grid.cells['0, 1'].isAlive = true;
+grid.cells['12, 26'].isAlive = true;
+grid.cells['13, 26'].isAlive = true;
+grid.cells['13, 28'].isAlive = true;
+grid.cells['14, 9'].isAlive = true;
+grid.cells['14, 27'].isAlive = true;
+grid.cells['14, 29'].isAlive = true;
+grid.cells['14, 34'].isAlive = true;
+grid.cells['14, 35'].isAlive = true;
+grid.cells['15, 9'].isAlive = true;
+grid.cells['15, 10'].isAlive = true;
+grid.cells['15, 27'].isAlive = true;
+grid.cells['15, 30'].isAlive = true;
+grid.cells['15, 34'].isAlive = true;
+grid.cells['15, 35'].isAlive = true;
+grid.cells['16, 0'].isAlive = true;
+grid.cells['16, 1'].isAlive = true;
+grid.cells['16, 4'].isAlive = true;
+grid.cells['16, 5'].isAlive = true;
+grid.cells['16, 10'].isAlive = true;
+grid.cells['16, 11'].isAlive = true;
+grid.cells['16, 27'].isAlive = true;
+grid.cells['16, 29'].isAlive = true;
+grid.cells['17, 0'].isAlive = true;
+grid.cells['17, 1'].isAlive = true;
+grid.cells['17, 4'].isAlive = true;
+grid.cells['17, 5'].isAlive = true;
+grid.cells['17, 10'].isAlive = true;
+grid.cells['17, 11'].isAlive = true;
+grid.cells['17, 12'].isAlive = true;
+grid.cells['17, 26'].isAlive = true;
+grid.cells['17, 28'].isAlive = true;
+grid.cells['18, 4'].isAlive = true;
+grid.cells['18, 5'].isAlive = true;
+grid.cells['18, 10'].isAlive = true;
+grid.cells['18, 11'].isAlive = true;
+grid.cells['18, 26'].isAlive = true;
+grid.cells['19, 9'].isAlive = true;
+grid.cells['19, 10'].isAlive = true;
+grid.cells['20, 9'].isAlive = true;
+
 grid.listen();
 grid.draw();
 
@@ -61,7 +98,7 @@ function assignToButton(but, func, paramArr) {
 }
 
 // let loop;
-let shouldLoop = false;
+let shouldLoop = true;
 
 
 function looper() {
