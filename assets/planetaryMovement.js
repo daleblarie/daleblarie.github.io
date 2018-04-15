@@ -123,32 +123,32 @@ function planetVelocity(bodyOrbitingMass, distance) {
 
 const SUN_MASS = 3000 / 5;
 const EARTH_MASS = 3 / 2;
-const MARS_MASS = 2/2
+const MARS_MASS = 2 / 2;
 
-const earthVel =  planetVelocity(SUN_MASS, 1400/5);
-const marsVel =  planetVelocity(SUN_MASS, 1900/5);
-const moonVel =  planetVelocity(EARTH_MASS, 50/5);
-const venusVel =  planetVelocity(SUN_MASS, 700/5);
-const mercuryVel = planetVelocity(SUN_MASS, 300/5);
-const phobosVel = planetVelocity(MARS_MASS, 50/5);
-const diemosVel = planetVelocity(MARS_MASS, 60/5);
+const earthVel = planetVelocity(SUN_MASS, 1400 / 5);
+const marsVel = planetVelocity(SUN_MASS, 1900 / 5);
+const moonVel = planetVelocity(EARTH_MASS, 50 / 5);
+const venusVel = planetVelocity(SUN_MASS, 700 / 5);
+const mercuryVel = planetVelocity(SUN_MASS, 300 / 5);
+const phobosVel = planetVelocity(MARS_MASS, 50 / 5);
+const diemosVel = planetVelocity(MARS_MASS, 60 / 5);
 // const saturnVel =  planetVelocity(SUN_MASS, 1500/5);
 // const plutoVel =  planetVelocity(SUN_MASS, 1900/5);
 // const uranusVel =  planetVelocity(SUN_MASS, 1800/5);
 // const jupiterVel =  planetVelocity(SUN_MASS, 1500/5);
 
-const earth = new Planet('earth', EARTH_MASS, 0, -earthVel, 'blue', 60/5, 3400/5, 2000/5);
-const moon = new Planet('moon', 0.1, 0, -moonVel - earthVel, 'white', 25/5, 3450/5, 2000/5);
-const mars = new Planet('mars', MARS_MASS, -marsVel, 0, 'red', 60/5, 2000/5, 100/5);
-const phobos = new Planet('phobos', .1/5, -marsVel - phobosVel, 0, 'white', 20/5, 2000/5, 150/5);
-const diemos = new Planet('diemos', .15/5, -marsVel + diemosVel, 0, 'white', 22/5, 2000/5, 40/5);
-const venus = new Planet('venus', .9/5, venusVel, 0, 'green', 55/5, 2000/5, 2700/5);
-const mercury = new Planet('mercury', .7/5, 0, mercuryVel, 'orange', 40/5, 1700/5, 2000/5);
+const earth = new Planet('earth', EARTH_MASS, 0, -earthVel, 'blue', 60 / 5, 3400 / 5, 2000 / 5);
+const moon = new Planet('moon', 0.1, 0, -moonVel - earthVel, 'white', 25 / 5, 3450 / 5, 2000 / 5);
+const mars = new Planet('mars', MARS_MASS, -marsVel, 0, 'red', 60 / 5, 2000 / 5, 100 / 5);
+const phobos = new Planet('phobos', 0.1 / 5, -marsVel - phobosVel, 0, 'white', 20 / 5, 2000 / 5, 150 / 5);
+const diemos = new Planet('diemos', 0.15 / 5, -marsVel + diemosVel, 0, 'white', 22 / 5, 2000 / 5, 40 / 5);
+const venus = new Planet('venus', 0.9 / 5, venusVel, 0, 'green', 55 / 5, 2000 / 5, 2700 / 5);
+const mercury = new Planet('mercury', 0.7 / 5, 0, mercuryVel, 'orange', 40 / 5, 1700 / 5, 2000 / 5);
 // const saturn = new Planet('saturn', 15/5, 0, -saturnVel, 'orange', 55/5, 3500/5, 2000/5);
 // const pluto = new Planet('pluto', 0.1, plutoVel, 0, 'purple', 25/5, 2000/5, 3900/5);
 // const uranus = new Planet('uranus', 5, -uranusVel, 0, 'aqua', 55/5, 2000/5, 200/5);
 // const jupiter = new Planet('jupiter', 20/5, 0, jupiterVel, 'chocolate', 70/5, 500/5, 2000/5);
-const sun = new Planet('sun', SUN_MASS, 0, 0, 'yellow', 100/5, 2000/5, 2000/5);
+const sun = new Planet('sun', SUN_MASS, 0, 0, 'yellow', 100 / 5, 2000 / 5, 2000 / 5);
 
 PLANET_LIST.push(earth, moon, mars, venus, mercury, phobos, diemos, sun);
 
