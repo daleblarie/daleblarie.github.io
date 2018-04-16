@@ -39,15 +39,18 @@
       <section class"projects">
         <h2 id="projects">Projects</h2>
         <div>
+          <h3 class="projectTitle">Planetary Movement</h3>
           <p> This is a planetary movement and gravity simulator I made using javascript. The planets all have their own mass, and their gravity's all interact with each other. These are the inner planets, and their moons.</p>
           <canvas id="canvas1" width="800" height="800"></canvas>
         </div>
         <div class="snake">
+          <h3 class="projectTitle">Snake</h3>
           <p> This is a snake game I made. This was the first project I ever did with javascript, and I learned a lot from it. Click the picture to go to it!</p>
           <a href="https://daleblarie.github.io/Snake-Game/"><img src="./assets/Snake Picture.png" width="400" height="400"/></a>
         </div>
-        <div>
-          <p> This is my version of Conway's Game of life. I built this using javascript. Click on a cell to toggle it on or off.</p>
+        <div class="gameOfLife">
+          <h3 class="projectTitle">Conway's Game Of Life</h3>
+          <p> This is my version of Conway's Game of life. I built this using javascript. You can click on a cell to toggle it on or off.</p>
           <div id="header">
             <button id="newGrid">New Grid</button>
             <button id="startStopGenerator">Start/Stop Generator</button>
@@ -55,7 +58,7 @@
               <!-- <span class="min">Slow</span>
               <span class="max">Fast</span> -->
             </label>
-            <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
+            <input type="range" min="1" max="700" value="350" class="slider" id="myRange">
           </div>
           <div id="container"></div>
           <script type="text/javascript" src="./assets/GameOfLife/Coord.js"></script>

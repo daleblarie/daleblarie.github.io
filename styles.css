@@ -63,17 +63,21 @@ a:hover {
   flex-direction: column;
 }
 }
+.about{
+  border-bottom: solid white 1px;
+}
 .about #about {
   padding-left: 100px;
   font-size: 2em;
 }
 .about .profile {
   width: 250px;
-
 }
 .about img {
+  margin-top: -380px;
   float: right;
   border-radius: 50%;
+  border: solid white 1px;
   max-width: 100%
 }
 .about p {
@@ -82,6 +86,7 @@ a:hover {
 
 #canvas1{
   margin: 0 auto;
+  margin-bottom: 20px;
   display: block;
   outline: 1px solid #fff;:
 }
@@ -90,7 +95,9 @@ a:hover {
   width: 50%
 }
 .snake{
+  border-top: white solid 1px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 p{
   text-align: center;
@@ -98,4 +105,10 @@ p{
 .snake img{
   display: block;
   margin: 0 auto;
+}
+.gameOfLife{
+  border-top: solid white 1px;
+}
+.projectTitle{
+  text-align: center;
 }
