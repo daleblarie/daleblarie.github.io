@@ -103,7 +103,7 @@ let shouldLoop = true;
 
 function looper() {
   if (shouldLoop) {
-    console.log('looping');
+    // console.log('looping');
     grid.setNextGen();
     grid.draw();
     setTimeout(looper, sliderVal);
@@ -124,10 +124,10 @@ setTimeout(looper(), sliderVal);
 const startStopLoop = () => {
   if (shouldLoop) {
     shouldLoop = false;
-    console.log('stop');
+    // console.log('stop');
   } else {
     shouldLoop = true;
-    console.log('start');
+    // console.log('start');
   }
 };
 
@@ -138,7 +138,7 @@ const startStopLoop = () => {
 
 const clearGrid = function clearGrid(obj) {
   shouldLoop = false;
-  console.log('clear');
+  // console.log('clear');
   obj.clear();
   obj.draw();
 };
@@ -147,5 +147,5 @@ assignToButton(newGridButton, clearGrid, [grid]);
 
 slider.oninput = function oninput() {
   sliderVal = this.value;
-  console.log('change');
+  // console.log('change');
 };

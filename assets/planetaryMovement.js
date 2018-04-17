@@ -159,4 +159,4 @@ setInterval(() => {
   ss.move();
   ss.draw();
 }, 15);
-console.log(earthVel);
+// console.log(earthVel);
